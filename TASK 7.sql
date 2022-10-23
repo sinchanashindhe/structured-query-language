@@ -1,0 +1,58 @@
+
+CREATE DATABASE Mobile_details;
+USE Mobile_details;
+CREATE TABLE mobile(SI_NO int, MOBILE_NAME varchar(20),PRICE int, SERIES varchar(20),CAMARA int, MOBILE_STORAGE varchar(20),RAM int,COLOUR varchar(20),BATTARY varchar(20),PROCESSOR varchar(20));
+INSERT INTO MOBILE values(1,'Redmi',20000,'Redmi note 5 pro',50,'64 GB',6,'Black','33W','Snapdragon 680');
+INSERT INTO MOBILE values(2,'Vivo',30000,'vivo 21 pro',40,'128 GB',6,'blue','44W','Snapdragon 680');
+INSERT INTO MOBILE values(3,'Oppo',35000,'Oppo 10a',60,'64 GB',8,'White','52W','Mediatek 6765');
+INSERT INTO MOBILE values(4,'Samsang',25000,'Samsong 11A',35,'32 GB',4,'White','60W','MTK D900');
+INSERT INTO MOBILE values(5,'Realme',30000,'Reamle 10',55,'64 GB',8,'blue','70W','Snapdragon 680');
+INSERT INTO MOBILE values(6,'Lenova',28000,'lenova 6a',32,'24 GB',4,'block','35W','Mediatek 6765');
+INSERT INTO MOBILE values(7,'One plus',44000,'One plus norze 2',108,'128 GB',8,'sky blue','88W','Snapdragon 8+');
+INSERT INTO MOBILE values(8,'poco',25000,'poco 2',35,'64 GB',4,'blue','52W','MTK D900');
+INSERT INTO MOBILE values(9,'jio',20000,'jio 2a',20,'32 GB',4,'white','32W','MTK D522');
+INSERT INTO MOBILE values(10,'Iphone',80000,'Iphone 14',50,'64 GB',12,'Grean','108W','Apple A16 Bionic');
+INSERT INTO MOBILE values(11,'nokia',8000,'nokiaversion',60,'32 GB',15,'brown','1000w','apple');
+INSERT INTO MOBILE values(12,'myphone',82000,'phone version',40,'64 GB',13,'white','100W',' Bionic');
+INSERT INTO MOBILE values(13,'linux',90000,'Iphone 13',60,'84 GB',12,'Grey','103W','A16 ');
+INSERT INTO MOBILE values(14,'bsnl',70000,'Iphone 15',40,'66 GB',12,'blue','101w','Apple');
+INSERT INTO MOBILE values(15,'sim',35000,'crudge',49,'45 GB',12,'yellow','105w','miscon');
+INSERT INTO MOBILE values(16,'vodafone',5000,'voda 18',40,'132GB',15,'111','108W','Bio');
+INSERT INTO MOBILE values(17,'pentac',23000,'Iphone 14',50,'64 GB',12,'Grean','108W','Apple A16 Bionic');
+INSERT INTO MOBILE values(18,'carbon',6000,'Iphone 14',50,'64 GB',12,'Grean','108W','carlet');
+INSERT INTO MOBILE values(19,'microphone',9000,'Iphone 14',50,'64 GB',12,'Grean','108W','micro');
+INSERT INTO MOBILE values(20,'landed',89000,'Iphone 14',50,'64 GB',12,'Grean','108W','landing');
+
+UPDATE MOBILE SET SERIES='Redmi note 10' WHERE SI_NO=1;
+UPDATE MOBILE SET SERIES='Redmi note 10',PRICE=30000 WHERE SI_NO=1;
+UPDATE MOBILE SET SERIES='Redmi 2A',CAMARA=108 WHERE SI_NO=1;
+UPDATE MOBILE SET SERIES='Redmi note 10',BATTARY=44 WHERE SI_NO=1;
+UPDATE MOBILE SET COLOUR='pick' WHERE SI_NO=3;
+UPDATE MOBILE SET COLOUR='brown',SERIES="oppo 21" WHERE SI_NO=3;
+UPDATE MOBILE SET PROCESSOR='MTK D900' ,BATTARY=55 WHERE SI_NO=5;
+UPDATE MOBILE SET PRICE=78000,RAM=8 WHERE SI_NO=12;
+UPDATE MOBILE SET CAMARA=45,RAM=3 WHERE SI_NO=8;
+UPDATE MOBILE SET PROCESSOR='A16', RAM=12 WHERE SI_NO=10;
+
+DELETE FROM MOBILE WHERE SI_NO = 2; 
+DELETE FROM MOBILE WHERE SI_NO = 20;
+DELETE FROM MOBILE WHERE SI_NO = 15;
+DELETE FROM MOBILE WHERE SI_NO = 11;
+DELETE FROM MOBILE WHERE SI_NO = 6;
+DELETE FROM MOBILE WHERE SI_NO = 5;
+DELETE FROM MOBILE WHERE SI_NO = 17;
+DELETE FROM MOBILE WHERE SI_NO = 3;
+DELETE FROM MOBILE WHERE SI_NO = 14;
+DELETE FROM MOBILE WHERE SI_NO = 9;
+
+SELECT *FROM MOBILE ORDER BY id desc;
+SELECT COUNT AS RAM  from MOBILE;
+SELECT COUNT  (*)  FROM MOBILE;
+SELECT  SUM (SERIES) from MOBILE;
+SELECT  MAX (SERIES) from MOBILE;
+SELECT  MIN(SI_NO) from MOBILE;
+
+
+SELECT * FROM MOBILE; 
+COMMIT ;
+ROLLBACK;
