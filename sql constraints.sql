@@ -1,30 +1,30 @@
 create database constraints;
 use constraints;
 
-create table mall (mall_Id int  check(mall_Id>2 ) auto_increment primary key ,Mall_Name varchar(50) unique,Address varchar(50) not null,MallOwnerName varchar(30) not null,noOf_visitorePerDay int not null,
+create table malldetails(mall_Id int  check(mall_Id>2 ) auto_increment primary key ,Mall_Name varchar(50) unique,Address varchar(50) not null,MallOwnerName varchar(30) not null,noOf_visitorePerDay int not null,
 openTime time not null,No_Of_Employees int not null, No_of_counters int not null,mallContactNo bigint unique,mallState varchar(60) not null);
 drop table mall;
 
-delete from  mall where  mall_Id=10;
+delete from  malldetails where  mall_Id=10;
 
 
-truncate mall;
-insert into mall values (1,'Orion','Rajajinaga','Ravichandra',1500,'10:20:00',250,60,9980325015,'Karnataka');
-insert into mall values (2,'LULU','vijayanagara','Bhuvanesh',1600,'10:20:00',300,10,9900775088,'Karnataka');
-insert into mall values (3,'UB City','K R Puram','johny',5200,'10:20:00',350,20,998203362,'Karnataka');
-insert into mall values (4,'Banglore Centrel','Gangotri','mantri',1452,'10:20:00',450,25,885523246,'Karnataka');
-insert into mall values (5,'Mantrisqare','Kuvempu','chandru',2362,'10:20:00',520,56,9980320546,'Karnataka');
-insert into mall values (6,'VR Bengalore','Mejestic','guru',2580,'10:20:00',260,62,175225821,'Karnataka');
-insert into mall values (7,'Ponix','vijayanagara','mahadeva',2500,'10:20:00',250,36,9980302417,'Karnataka');
-insert into mall values (8,'ForumKoramangala','whitefield','ravi',1800,'10:20:00',850,100,1025620,'Karnataka');
-insert into mall values (9,'Gt world Mall','electronic city','manu',1200,'10:20:00',180,15,6361561399,'Karnataka');
-insert into mall values (10,'Royal Meenakshi mall','kuvempu nagar','govinda',1300,'10:20:00',220,3,9844237205,'Karnataka');
-insert into mall values (11,'Vega city mall','navarang','ananus',1700,'10:20:00',420,20,9854451122,'Karnataka');
-insert into mall values (12,'MG Ledo Mall','Rajajinagar','avinash',1120,'10:20:00',320,50,9980385015,'Karnataka');
-insert into mall values (13,'Peak mall','mahalksmi Layoyt','madhu',1500,'10:20:00',352,15,8645212520,'Karnataka');
-insert into mall values (14,'Orion East','Chandra Layout','hareesh',1200,'10:20:00',650,25,9980352064,'Karnataka');
+truncate malldetails;
+insert into mall values (1,'Orion','Rajajinaga','Ravichandra',1500,'10:20:00',250,60,9980325015,'Dubai');
+insert into mall values (2,'global village','vijayanagara','Bhuvanesh',1600,'10:20:00',300,10,9900775088,'Dubai');
+insert into mall values (3,'Mall of Emirates','K R Puram','johny',5200,'10:20:00',350,20,998203362,'Dubai');
+insert into mall values (4,'dubai Centrel','Gangotri','mantri',1452,'10:20:00',450,25,885523246,'Dubai');
+insert into mall values (5,'City Walk','Kuvempu','chandru',2362,'10:20:00',520,56,9980320546,'Dubai');
+insert into mall values (6,'South Madinat Jumeraih ','south west','guru',2580,'10:20:00',260,62,175225821,'Dubai');
+insert into mall values (7,'Ponix','vijayanagara','mahadeva',2500,'10:20:00',250,36,9980302417,'Dubai');
+insert into mall values (8,'ForumKoramangala','whitefield','ravi',1800,'10:20:00',850,100,1025620,'Dubai');
+insert into mall values (9,'Gt world Mall','electronic city','manu',1200,'10:20:00',180,15,6361561399,'Dubai');
+insert into mall values (10,'Royal Meenakshi mall','kuvempu nagar','govinda',1300,'10:20:00',220,3,9844237205,'Dubai');
+insert into mall values (11,'Vega city mall','navarasa','ananus',1700,'10:20:00',420,20,9854451122,'Dubai');
+insert into mall values (12,'MG Ledo Mall','Rajajinagar','avinash',1120,'10:20:00',320,50,9980385015,'Dubai');
+insert into mall values (13,'Peak mall','mahalksmi Layoyt','madhu',1500,'10:20:00',352,15,8645212520,'Dubai');
+insert into mall values (14,'Dubai Marina Mall','Chandra Layout','hareesh',1200,'10:20:00',650,25,9980352064,'Karnataka');
 insert into mall values (15,'Gopalan Fignatura ','Chitamani','chandu',1400,'10:20:00',180,36,9980327015,'Karnataka');
-insert into mall values (16,'Garuda mall','Chandapura','chandru',1580,'10:20:00',48,10,256421012,'Karnataka');
+insert into mall values (16,'Green Garden','Chandapura','chandru',1580,'10:20:00',48,10,256421012,'Karnataka');
 insert into mall values (17,'RMZ Galaria','jalahalli cross','harshi',1100,'10:20:00',150,25,6361531688,'Karnataka');
 insert into mall values (18,'citycentre','vinobnagar','budda',1000,'10:20:00',180,10,9900775888,'Karnataka');
 
